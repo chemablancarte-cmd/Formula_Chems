@@ -19,7 +19,7 @@ public class Escuderia {
             throw new IllegalArgumentException("La lista de pilotos de una escudería no debe de ser inexistentes");
         }
         if(drivers.size() < MIN_PILOTOS || drivers.size() > MAX_PILOTOS){
-            throw new IllegalArgumentException("La lista de pilotos debe tener entre "+MIN_PILOTOS+" y "+MAX_PILOTOS" para ser valida.");
+            throw new IllegalArgumentException("La lista de pilotos debe tener entre " + MIN_PILOTOS + " y " + MAX_PILOTOS + " para ser valida.");
         }
         if(drivers.contains(null)){
             throw new IllegalArgumentException("La lista de pilotos de una escudería no debe de tener pilosos inexistentes");
@@ -48,7 +48,7 @@ public class Escuderia {
     }
 
     public List<Vehiculo> getVehiculos() {
-        return ArrayList<>(this.listaVehiculos);
+        return new ArrayList<>(this.listaVehiculos);
     }
 
     public List<Driver> getDrivers() {
